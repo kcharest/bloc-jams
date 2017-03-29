@@ -33,10 +33,17 @@ html {
      .column.fourth { width: 25%; }
      .column.flow-opposite { float: right; }
  }
-
- 
  /* Large screens (1024px) */
  @media (min-width: 1024px) {
      html { font-size: 120%; }
    /* Style information will go here */
  }
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
+}
